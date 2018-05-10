@@ -1,32 +1,177 @@
-<html>
+ <html>
     <head>
         <style>
+            #inventory {
+                background: #8F912C;
+                width:350px;
+                position:absolute;
+            }
             body {background-image:url("https://wallpaperbrowse.com/media/images/grass_pattern_204850.jpg")}
+1
+ <html>
+2
+    <head>
+3
+        <style>
+4
+            #inventory {
+5
+                background: #8F912C;
+6
+                width:350px;
+7
+                position:absolute;
+            }
             #title {font-size:50px}
+            #char1{
+                position:absolute;
+                top:200px;
+                left:200px;
+            }
+            #inventory {
+                display:none;
+            }
+            
+            .brick {
+                width:50px;
+                 border:1px solid red;
+            }
+            .box {
+                border:2px solid red;
+                width:70px;
+                height:40px;
+                position:absolute;
+            }
+            #box1 {
+                top:640px;
+                left:600px;
+            }
+            #box2 {
+                top:640px;
+                left:700px;
+            }
+       #box3 {
+                top:640px;
+                left:800px;
+            }
+       
+            
+             #box4 {
+                top:640px;
+                left:900px;
+            }
+      
+          #box5 {
+                top:640px;
+                left:1000px;
+            }
+            
+          
+                
+               
+      
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+           
+                
+                
+                
+            
+            
+            
         </style>
     </head>
     <body>
-  <h1 id="title" >MICAHCRAFT</h1>
+        <h1>welcome to micahcraft</h1>
+        
         <img  id="char1" src="https://i.pinimg.com/originals/f0/b2/7e/f0b27e8e3a0978694001fcd2afd58f25.png">
-        <img id="brick1" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-        <img id="brick2" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-        <img id="brick3" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-        <img id="brick4" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-        <img id="brick5" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-        <img id="brick6" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-        <img id="brick7" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-        <img id="brick8" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-        <img id="brick9" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-        <img id="brick10" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-        <img id="brick11" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-        <img id="brick12" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-        <img id="brick13" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-        <img id="brick14" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-        <img id="brick15" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-            <img id="brick15" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-            <img id="brick15" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-            <img id="brick15" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
-           
+        <div class='box' id='box1'></div>
+        <div class='box' id='box2'></div>
+        <div class='box' id='box3'></div>
+        <div class='box' id='box4'></div>
+         <div class='box' id='box5'></div>
+     
+        <button onclick="document.getElementById('inventory').style.display='block'" id="open_inventory">
+             Open Inventory
+        </button> 
+        
+        <div id="inventory"> 
+        
+            <img class="brick" onmousedown="startdrag('brick1')" id="brick1" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick2')" id="brick2" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick3')"id="brick3" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick4')" id="brick4" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick5')" id="brick5" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick"onmousedown="startdrag('brick6')" id="brick6" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick7')" id=brick7 src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick8')" id="brick8" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick9')" id="brick9" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick10')" id="brick10" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick11')"  id="brick11" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick12')" id="brick12" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick13')" id="brick13" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick14')" id="brick14" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick15')" id="brick15" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick16')" id="brick16" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick" onmousedown="startdrag('brick17')" id="brick17" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
+            <img class="brick"   onmousedown="startdrag('brick18')" id="brick18" src="https://d1u5p3l4wpay3k.cloudfront.net/minecraft_gamepedia/f/ff/Bricks.png">
             
+                
+            
+            
+            
+            
+            
+              <button onclick="document.getElementById('inventory').style.display='none'" id="close_inventory">
+                close inventory 
+            </button>
+           </div>
+          <script src="script.js"></script>  
     </body>
 </html>
